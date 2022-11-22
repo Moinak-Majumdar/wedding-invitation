@@ -44,7 +44,7 @@ export const Footer = () => {
                 <motion.div variants={Fade} className='flex gap-6 mt-8 mx-auto'>
                     {links.map((curr, index) => {
                         return (
-                            <a href={curr.href} target='_blank' className={`text-2xl`}>
+                            <a href={curr.href} key={index} target='_blank' className={`text-2xl`}>
                                 {curr.icon}
                             </a>
                         )

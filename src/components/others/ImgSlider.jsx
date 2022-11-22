@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import { MdNavigateNext } from 'react-icons/md'
 
 
-
-
 function ImgSlider({images}) {
+
+    console.log(images)
 
     const [width, setWidth] = useState(0);
     const [slide, setSlide] = useState(0);
@@ -27,7 +27,6 @@ function ImgSlider({images}) {
     function prev() {
         if ((slide + imgRef.current.offsetWidth) <= 0) {
             setSlide(slide + imgRef.current.offsetWidth)
-            console.log('prev', slide + imgRef.current.offsetWidth, width)
         } else {
             setSlide(width)
         }
@@ -44,8 +43,8 @@ function ImgSlider({images}) {
                 {images.map((curr, index) => {
                     return (
                         // item
-                        <motion.div ref={imgRef} key={index} className='min-w-full min-h-[18rem]  max px-4'>
-                            <img src={curr} alt={`${index}.jpg`} className='rounded-3xl min-w-full min-h-full' style={{ pointerEvents: 'none' }} layout='fill'></img>
+                        <motion.div ref={imgRef} key={index} className='min-w-full min-h-[18rem] px-4'>
+                            <img src={curr} alt={`${index}.jpg`} className='rounded-3xl min-w-full min-h-full' style={{ pointerEvents: 'none' }}></img>
                         </motion.div>
                     )
                 })}

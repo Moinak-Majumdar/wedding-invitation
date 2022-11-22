@@ -63,7 +63,7 @@ const Right = {
 
 export const Families = () => {
     return (
-        <section id='families' className='container  px-6 md:px-16 my-24  h-fit mx-auto flex flex-col justify-center'>
+        <section id='families' className='container px-6 md:px-16 my-24 h-fit mx-auto flex flex-col justify-center'>
             <div className='relative mx-auto'>
                 <motion.h1 variants={top} className='font-courgette text-4xl mx-auto'>Families</motion.h1>
                 <motion.img variants={top} src={require('../../assets/image/flower-4.png')} className='w-32 h-32 absolute -bottom-4 left-16 -z-10' />
