@@ -25,7 +25,11 @@
     font-weight: 400;
     src: url(../assets/fonts/Ubuntu-Italic.ttf);
 }
-
+@font-face {
+    font-family: Pacifico;
+    font-style: normal;
+    src: url(../assets/fonts/Pacifico-Regular.ttf);
+}
 
 #root {
     background-attachment: fixed;

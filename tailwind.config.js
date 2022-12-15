@@ -27,6 +27,7 @@ module.exports = {
     fontFamily:{
       courgette : 'Courgette',
       ubuntu: "Ubuntu",
+      pacifico : "Pacifico"
     }
   },
   variants: {
