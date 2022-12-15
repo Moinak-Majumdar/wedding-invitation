@@ -55,13 +55,13 @@ const Story = () => {
                 but that&apos;s the whole point, you don&apos;t need a soulmate! You just need that
                 <span className='font-courgette text-pink-600 px-1'>special someone!</span>
             </motion.p>
-            <motion.div variants={innerVariants2} className='mt-8 w-[95%] md:w-[45%] h-[50rem] relative flex flex-col justify-center items-center'>
+            <motion.div variants={innerVariants2} className='mt-8 w-[95%] md:w-[45%] h-[40rem] md:h-[50rem] relative flex flex-col justify-center items-center'>
                 <div className='w-full flex justify-center'>
                     <Swiper slidesPerView={1} spaceBetween={30} loop={true} pagination={{ clickable: true, }} navigation={true} modules={[Pagination, Navigation]} className="mySwiper">
                         {images.map((curr, i) => {
                             return (
                                 <SwiperSlide key={i}>
-                                    <img src={curr} className='h-[48rem] w-full' loading='lazy' />
+                                    <img src={curr} className='h-[38rem] md:h-[48rem] w-full' loading='lazy' />
                                 </SwiperSlide>
                             )
                         })}

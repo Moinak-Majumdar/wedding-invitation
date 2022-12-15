@@ -77,7 +77,7 @@ const DateTime = () => {
                     </motion.div>
                 </div>
             </div>
-            <motion.img variants={bottom} className='mt-4 mx-auto w-[90%] md:w-[70%] h-[35rem] rounded-3xl flex justify-center items-center shadow-2xl shadow-slate-800' src={require('../../assets/photo/hands.jpg')}>
+            <motion.img variants={bottom} className='mt-4 mx-auto w-[90%] md:w-[70%] h-[28rem] md:h-[35rem] rounded-3xl flex justify-center items-center shadow-2xl shadow-slate-800' src={require('../../assets/photo/hands.jpg')}>
             </motion.img>
         </motion.section>
     )
