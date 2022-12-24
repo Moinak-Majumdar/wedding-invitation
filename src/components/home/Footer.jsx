@@ -87,8 +87,8 @@ export const Footer = () => {
                         })}
                     </motion.div>
                 </div>
-                <motion.div variants={innerVariants2} className='mt-10'>
-                    <h1>&copy;{new Date().getFullYear()} - by Moinak Majumdar. Designed with Framer Motion and Tailwind css, Created with React.js</h1>
+                <motion.div variants={innerVariants2} className='mt-10 text-xl'>
+                    <h1>&copy;{new Date().getFullYear()} - by Madhumit</h1>
                 </motion.div>
             </motion.div>
         </section>

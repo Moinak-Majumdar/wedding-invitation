@@ -7,6 +7,7 @@ import Hero from '../components/home/Hero'
 import { Registry } from '../components/home/Registry'
 import Story from '../components/home/Story'
 
+
 const viewport = {
   once: false,
   amount: typeof window !== 'undefined' ? (window.innerWidth > 450 ? 0.5 : 0.1) : 0.5

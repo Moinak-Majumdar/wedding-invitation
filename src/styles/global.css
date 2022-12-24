@@ -40,9 +40,13 @@
     overflow: overlay;
     overflow-x: hidden;
 }
-
 ::-webkit-scrollbar{
-    width: 8px;
+    width: 5px;
+}
+@media screen and (min-width: 1080px) {
+    ::-webkit-scrollbar{
+        width: 8px;
+    }
 }
 ::-webkit-scrollbar-track {
    background: transparent;

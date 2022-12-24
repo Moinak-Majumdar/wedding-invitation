@@ -70,13 +70,13 @@ export const Families = () => {
             </div>
             <div className='mt-10 flex flex-col md:flex-row justify-center md:justify-between items-center min-w-full'>
                 <motion.div variants={Left} className='flex flex-col w-full md:w-30r xl:w-35r'>
-                    <h1 className='text-3xl font-ubuntu ml-6 text-pink-500'>Introducing the Bride side</h1>
-                    <img src={require('../../assets/photo/bride.jpg')} className='mt-4 rounded-3xl shadow-2xl shadow-black'/>
+                    <h1 className='text-2xl lg:text-3xl font-courgette text-center ml-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-blue-500'>Introducing the Bride side</h1>
+                    <img src={require('../../assets/photo/bride.jpg')} className='mt-4 rounded-xl shadow-2xl shadow-orange-200'/>
                 </motion.div>
                 <motion.img variants={bottom} src={require('../../assets/image/flower-2.png')} className='h-32 w-52 my-4 mx-auto'/>
                 <motion.div variants={Right} className='flex flex-col w-full md:w-30r xl:w-35r mt-4 md:mt-0'>
-                    <h1 className='text-3xl font-ubuntu ml-6 text-indigo-500'>Introducing the Groom side</h1>
-                    <img src={require('../../assets/photo/groom.jpg')} className='mt-4 rounded-3xl shadow-2xl shadow-black'/>
+                    <h1 className='text-2xl lg:text-3xl font-courgette text-center ml-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-rose-600'>Introducing the Groom side</h1>
+                    <img src={require('../../assets/photo/groom.jpg')} className='mt-4 rounded-xl shadow-2xl shadow-rose-200'/>
                 </motion.div>
             </div>
         </section>
