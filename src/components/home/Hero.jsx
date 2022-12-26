@@ -11,22 +11,22 @@ const outerVariants = {
 };
 const innerVariants1 = {
   open: {
-    y: 0,
+    y: -260,
     opacity: 1,
   },
   closed: {
-    y: -400,
+    y: -600,
     opacity: 0,
   }
 };
 
 const innerVariants2 = {
   closed: {
-    x: 200,
+    y: 200,
     opacity: 0
   },
   open: {
-    x: 0,
+    y: 0,
     opacity: 1
   }
 }
@@ -53,6 +53,10 @@ const Hero = () => {
       const sec = Math.floor((distance % (1000 * 60)) / 1000)
 
       if (distance < 0) {
+        setDays('00')
+        setHour('00')
+        setMinute('00')
+        setSecond('00')
         clearInterval(interval.current)
       } else {
         setDays(day)
@@ -72,11 +76,10 @@ const Hero = () => {
   })
   return (
     <section id='intro' className="min-w-full min-h-screen flex justify-center items-center relative rounded-br-[100px]" style={{ backgroundImage: `url(${require('../../assets/image/hero.jpg')})`, backgroundSize: 'cover', backgroundPosition: 'center center' }}>
-      <motion.div initial='closed' whileInView='open' viewport={{ once: false, amount: 0.1 }} variants={outerVariants} className="container my-auto flex flex-col justify-center items-center">
-        <motion.h1 variants={innerVariants1} className="uppercase font-ubuntu font-bold text-6xl md:text-8xl text-center text-transparent bg-clip-text bg-gradient-to-b from-pink-400 to-cyan-300">she said yes !</motion.h1>
-        <motion.div variants={innerVariants2} className="absolute bottom-24 md:bottom-10  w-fit border border-white rounded-md flex flex-col justify-center items-center px-6 md:px-10">
-          <h1 className='mb-8 mt-4 font-pacifico text-2xl text-transparent bg-gradient-to-r bg-clip-text from-red-400 to-blue-400'>Countdown Timer</h1>
-          <div className='flex justify-center gap-2 md:gap-4 mb-4'>
+      <motion.div initial='closed' whileInView='open' viewport={{ once: false, amount: 0.1 }} variants={outerVariants} className="container my-auto flex flex-col items-center">
+        <motion.h1 variants={innerVariants1} className="uppercase font-ubuntu font-bold text-5xl md:text-7xl text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-rose-500">she said yes !</motion.h1>
+        <motion.div variants={innerVariants2} className="absolute bottom-30 md:bottom-20 flex flex-col justify-center items-center">
+          <div className='flex justify-center gap-2 md:gap-4'>
             {/*days  */}
             <div className='flex flex-col justify-center items-center'>
               <h1 className='text-5xl md:text-6xl font-courgette text-transparent bg-gradient-to-b from-[#89fffd] to-[#ef32d9] bg-clip-text px-1'>{Days}</h1>
@@ -101,6 +104,7 @@ const Hero = () => {
               <h4 className='font-ubuntu text-white'>Seconds</h4>
             </div>
           </div>
+          <h1 className='mt-8 font-pacifico text-2xl pb-2 text-transparent bg-gradient-to-r bg-clip-text from-red-400 to-blue-400'>Away from tieing the knot</h1>
         </motion.div>
       </motion.div>
     </section>

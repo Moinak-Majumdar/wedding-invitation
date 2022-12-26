@@ -41,7 +41,7 @@ const Story = () => {
     return (
         <motion.section initial='closed' whileInView='open' viewport={{ once: false, amount: 0.1 }} variants={outerVariants} id='story' className='container px-6 md:px-16 mt-10 flex flex-col items-center h-fit mx-auto'>
             <motion.img variants={innerVariants1} src={require('../../assets/image/flower.png')} />
-            <motion.h1 variants={innerVariants1} className='mt-6 text-3xl md:text-4xl font-pacifico'>Our Storie</motion.h1>
+            <motion.h1 variants={innerVariants1} className='mt-6 text-3xl md:text-4xl font-pacifico'>Our Story</motion.h1>
             <motion.p variants={innerVariants1} className='mt-10 font-courgette text-lg md:text-2xl text-[#6C4AB6] leading-relaxed'>
                 <span className='font-courgette text-pink-600 px-1'>Soulmates!</span>
                 <span className='font-courgette text-pink-600 px-1'>Soulmates</span>

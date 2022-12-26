@@ -20,7 +20,7 @@ const top = {
 
 const bottom = {
     closed: {
-        y: -200,
+        y: 200,
         opacity: 0
     },
     open: {

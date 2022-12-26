@@ -65,7 +65,7 @@ const links = [
 export const Footer = () => {
 
     return (
-        <section className='min-w-screen flex justify-center items-center bg-gradient-to-br from-[#243B55] to-[#243B55] text-gray-300'>
+        <section className='min-w-screen flex justify-center items-center bg-gradient-to-b from-[#4a7bb3] to-[#213955] text-gray-300'>
             <motion.div initial='closed' whileInView='open' viewport={{ once: false, amount: 0.4 }} variants={outerVariants} className='container px-6 md:px-16 my-24  h-fit mx-auto flex flex-col justify-center items-center'>
                 <motion.a variants={innerVariants1} href='#intro' className='flex justify-center items-center flex-col'>
                     <h1  className='text-8xl'>
