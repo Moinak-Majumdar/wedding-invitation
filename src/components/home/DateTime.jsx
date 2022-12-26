@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { FaMapMarkerAlt } from 'react-icons/fa'
 
 const outerVariants = {
     open: {
@@ -53,7 +54,7 @@ const Right = {
 
 const DateTime = () => {
     return (
-        <motion.section id='dates' initial='closed' whileInView='open' viewport={{ once: false, amount: 0.4 }} variants={outerVariants} className='container px-6 md:px-16 my-20 h-fit mx-auto flex flex-col justify-center'>
+        <motion.section id='dates' initial='closed' whileInView='open' viewport={{ once: false, amount: 0.4 }} variants={outerVariants} className='container px-6 md:px-16 my-10 h-fit mx-auto flex flex-col justify-center'>
             <div className='flex md:flex-row flex-col justify-center items-center mx-auto'>
                 <motion.h1 variants={top} className='font-courgette text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-pink-600 mx-auto mb-8'>Save the dates !</motion.h1>
                 <div className='flex flex-col'>
@@ -64,6 +65,10 @@ const DateTime = () => {
                             <span>Date : 27/01/2023</span> <br />
                             <span>Time : 17:30:00</span> <br />
                             <span>Place : Palta, Bani Bhavan</span>
+                            <a href='https://goo.gl/maps/D93Sf8wj9X4ZSopm6' target='_blank' className='flex items-center gap-2 mt-2 text-blue-500'>
+                                <FaMapMarkerAlt/>
+                                <span>Map Link</span>
+                            </a>
                         </h4>
                     </motion.div>
                     <motion.div variants={Left} className="w-full mx-auto p-4 flex justify-between max-w-xl items-center mt-10 relative">
@@ -72,6 +77,10 @@ const DateTime = () => {
                             <span>Date : 29/01/2023</span> <br />
                             <span>Time : 19:00:00</span> <br />
                             <span>Place : Anandamath, C Block community hall</span>
+                            <a href='https://www.google.com/maps?q=22.795517,88.377914&entry=gps' target='_blank' className='flex items-center gap-2 mt-2 text-blue-500'>
+                                <FaMapMarkerAlt/>
+                                <span>Map Link</span>
+                            </a>
                         </h4>
                         <h1 className="font-courgette text-2xl md:text-3xl capitalize text-indigo-600 ml-auto">the reception</h1>
                     </motion.div>

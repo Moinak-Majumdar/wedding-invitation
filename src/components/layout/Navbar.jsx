@@ -46,7 +46,7 @@ const links = [
   { name: 'Our Story', link: '#story' },
   { name: 'Families', link: '#families' },
   { name: 'Save the Dates', link: '#dates' },
-  { name: 'Registry', link: '#registry' },
+  { name: 'Invitation', link: '#msgForU' },
   { name: 'Assistance', link: '#assistance' }
 ]
 
