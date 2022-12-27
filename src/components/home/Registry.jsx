@@ -44,7 +44,7 @@ export const Registry = () => {
                         
                         <h3 className='mt-2'>As we embark on this new journey together, we are grateful to have you by our side to share in our joy and support us as we start this next chapter of our life.</h3>
                         
-                        <h3 className='mt-2'>We hope that you will be able to join us for this special occasion and look forward to celebrating with you.</h3>
+                        <h3 className='mt-2'>We hope that you will be able to join us for this special occasion. Looking forward to celebrating with you.</h3>
                     </div>
 
                     <h2 className='text-xl md:text-2xl mt-6'>Yours truly,</h2>
@@ -52,7 +52,7 @@ export const Registry = () => {
                     
                 </motion.div>
                 <h1 className='mt-10 uppercase font-ubuntu font-bold italic text-2xl text-yellow-300 animate-bounce'>#Madhumit</h1>
-                <h1 className='mt-2 uppercase font-ubuntu font-bold italic text-2xl text-yellow-300 animate-bounce'>#10yearoftougetherness</h1>
+                <h1 className='mt-2 uppercase font-ubuntu font-bold italic text-2xl text-yellow-300 animate-bounce'>#10yearsoftougetherness</h1>
             </motion.div>
         </section>
 

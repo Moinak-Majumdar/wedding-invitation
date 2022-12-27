@@ -13,12 +13,12 @@ const divVariants = {
     width: '300px',
     height: '100vh',
     x: '500px',
-    transition: {delay: 0.68}
+    transition: {delay: 0.5}
   }
 }
 const ulVariants = {
   open: {
-    transition: { staggerChildren: 0.07, delayChildren: 0.5 }
+    transition: { staggerChildren: 0.07, delayChildren: 0.3 }
   },
   closed: {
     transition: { staggerChildren: 0.05, staggerDirection: -1 }
@@ -26,17 +26,17 @@ const ulVariants = {
 };
 const liVariants = {
   open: {
-    y: 40,
+    x: 0,
     opacity: 1,
     transition: {
-      y: { stiffness: 1000, velocity: -100 }
+      x: { stiffness: 800, velocity: 100 }
     }
   },
   closed: {
-    y: 0,
+    x: 200,
     opacity: 0,
     transition: {
-      y: { stiffness: 1000 }
+      x: { stiffness: 800 }
     }
   }
 };

@@ -47,10 +47,10 @@ const innerVariants3 = {
 export const Assistance = () => {
     return (
         <motion.section id='assistance' initial='closed' whileInView='open' viewport={{ once: false, amount: 0.4 }} variants={outerVariants} className='container px-6 md:px-16 my-24  h-fit mx-auto flex flex-col justify-center'>
-            <motion.h1 variants={innerVariants1} className='font-courgette text-4xl md:text-6xl  mx-auto z-10 text-transparent bg-gradient-to-r bg-clip-text from-indigo-500 to-red-500'>Contact with families</motion.h1>
+            <motion.h1 variants={innerVariants1} className='font-courgette text-4xl md:text-6xl text-center z-10 text-transparent bg-gradient-to-r bg-clip-text from-indigo-500 to-red-500'>Connect with families</motion.h1>
             <div className='grid md:grid-cols-3 grid-cols-1 gaps-4 px-auto'>
                 <motion.div variants={innerVariants2} className='mt-16 flex flex-col mr-auto ml-0 md:ml-auto'>
-                    <h1 className='text-xl mr-4 capitalize font-ubuntu text-green-400'>text via whatsapp</h1>
+                    <h1 className='text-xl mr-4 capitalize font-ubuntu text-green-400'>text on whatsapp</h1>
                     <a className='text-xl mt-2 flex items-center gap-4' href='https://api.whatsapp.com/send?phone=+919804139678&text=I%20need%20directions'>
                         <span>
                             1. I need directions.
@@ -77,7 +77,7 @@ export const Assistance = () => {
                     </a>
                 </motion.div>
                 <motion.div variants={innerVariants3} className='mt-16 flex flex-col ml-auto mr-0 md:mr-auto'>
-                    <h1 className='text-xl mr-4 capitalize font-ubuntu text-blue-500'>Call immediately <br /> at wedding.</h1>
+                    <h1 className='text-xl mr-4 capitalize font-ubuntu text-blue-500'>Ring for assistance <br /> at wedding.</h1>
                     <a className='text-xl mt-2 flex items-center gap-4' href='tel:+919804139678'>
                         <span >
                             1. 9804139678
@@ -98,7 +98,7 @@ export const Assistance = () => {
                     </a>
                 </motion.div>
                 <motion.div variants={innerVariants2} className='mt-16 flex flex-col mr-auto ml-0 md:ml-auto'>
-                    <h1 className='text-xl mr-4 capitalize font-ubuntu text-blue-500'>Call immediately <br /> at reception.</h1>
+                    <h1 className='text-xl mr-4 capitalize font-ubuntu text-blue-500'>Ring for assistance <br /> at reception.</h1>
                     <a className='text-xl mt-2 flex items-center gap-4' href='tel:+919674622429'>
                         <span >
                             1. 9674622429
