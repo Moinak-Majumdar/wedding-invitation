@@ -1,9 +1,4 @@
 import { motion } from 'framer-motion'
-import ImgSlider from '../others/ImgSlider'
-
-const her = [require('../../assets/image/queen.jpg'), require('../../assets/image/sunset-7490522.jpg'), require('../../assets/image/bicycles-1867046.jpg'), require('../../assets/image/sunset-7490522.jpg'), require('../../assets/image/bicycles-1867046.jpg'), require('../../assets/image/sunset-7490522.jpg'), require('../../assets/image/bicycles-1867046.jpg')]
-
-const his = [require('../../assets/image/king.jpg'), require('../../assets/image/sunset-7490522.jpg'), require('../../assets/image/bicycles-1867046.jpg'), require('../../assets/image/sunset-7490522.jpg'), require('../../assets/image/bicycles-1867046.jpg'), require('../../assets/image/sunset-7490522.jpg'), require('../../assets/image/bicycles-1867046.jpg')]
 
 const top = {
     closed: {

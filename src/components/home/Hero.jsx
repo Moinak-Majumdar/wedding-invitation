@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect, useRef } from 'react';
+import Floating from '../others/Floating'
 
 const outerVariants = {
   open: {
@@ -75,7 +76,7 @@ const Hero = () => {
     }
   })
   return (
-    <section id='intro' className="min-w-full min-h-screen flex justify-center items-center relative rounded-br-[100px]" style={{ backgroundImage: `url(${require('../../assets/image/hero.jpg')})`, backgroundSize: 'cover', backgroundPosition: 'center center' }}>
+    <section id='intro' className="min-w-full min-h-screen flex flex-col justify-center items-center relative rounded-br-[100px]" style={{ backgroundImage: `url(${require('../../assets/image/hero.jpg')})`, backgroundSize: 'cover', backgroundPosition: 'center center' }}>
       <motion.div initial='closed' whileInView='open' viewport={{ once: false, amount: 0.1 }} variants={outerVariants} className="container my-auto flex flex-col items-center">
         <motion.h1 variants={innerVariants1} className="uppercase font-ubuntu font-bold text-5xl md:text-7xl text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-rose-500">she said yes !</motion.h1>
         <motion.div variants={innerVariants2} className="absolute bottom-20 md:bottom-30 flex flex-col justify-center items-center">
@@ -107,6 +108,7 @@ const Hero = () => {
           <h1 className='mt-8 font-pacifico text-2xl pb-2 text-transparent bg-gradient-to-r bg-clip-text from-red-400 to-blue-400'>Away from tieing the knot</h1>
         </motion.div>
       </motion.div>
+      <Floating />
     </section>
   )
 }
