@@ -13,7 +13,7 @@ const divVariants = {
     width: '300px',
     height: '100vh',
     x: '500px',
-    transition: {delay: 0.5}
+    transition: {delay: 0.6}
   }
 }
 const ulVariants = {
@@ -42,7 +42,7 @@ const liVariants = {
 };
 
 const links = [
-  { name: 'Into', link: '#intro' },
+  { name: 'Intro', link: '#intro' },
   { name: 'Our Story', link: '#story' },
   { name: 'Families', link: '#families' },
   { name: 'Save the Dates', link: '#dates' },
@@ -54,6 +54,11 @@ const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   const [activeLink, setActiveLink] = useState(null)
+
+  function toggle (args) {
+    setActiveLink(args)
+    setIsOpen(false)
+  }
 
   return (
     <>
@@ -78,7 +83,7 @@ const Navbar = () => {
               {links.map((curr, index) => {
                 return (
                   <motion.div key={index} variants={liVariants} whileTap={{scale: 0.9}} className='w-full text-2xl px-4 mb-4 flex items-center'>
-                    <a href={curr.link} onClick={() => setActiveLink(curr.name)} className='font-ubuntu italic'>{curr.name}</a>
+                    <a href={curr.link} onClick={() => toggle(curr.name)} className='font-ubuntu italic'>{curr.name}</a>
                     <BsBookmarkHeartFill className={activeLink === curr.name ? 'text-slate-800 ml-auto text-3xl' : 'hidden'}/>
                   </motion.div>
                 )

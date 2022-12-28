@@ -43,6 +43,16 @@ const innerVariants3 = {
         opacity: 1
     }
 }
+const innerVariants4 = {
+    open: {
+        y: 0,
+        opacity: 1,
+    },
+    closed: {
+        y: 200,
+        opacity: 0,
+    }
+};
 
 export const Assistance = () => {
     return (
@@ -113,7 +123,7 @@ export const Assistance = () => {
                     </a>
                 </motion.div>
             </div>
-            <motion.h1 variants={innerVariants1} className='mt-20 font-pacifico text-orange-500 text-xl text-center'>One tap away to connect.</motion.h1>
+            <motion.h1 variants={innerVariants4} className='mt-20 font-pacifico text-orange-500 text-xl text-center'>One tap away to connect.</motion.h1>
         </motion.section>
     )
 }
